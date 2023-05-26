@@ -4,14 +4,12 @@ incs.push({ id: 'bootstrapcss', src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0
 incs.push({ id: 'jquery', src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' });
 incs.push({ id: 'indexcss', src: gitCdn(Object.assign(gitParams, { path: 'web/index.css' })) });
 
-include(incs).then(async (res) => {
+include(incs).then(async () => {
   var $b = $(document.body);
   $b.attr('cz-shortcut-listen', 'true');
   $b.css('background', '#EEEAE7');
-  var ret = await fetch(gitCdn(Object.assign(gitParams, { path: 'web/index.htm' })));
-  debugger;
-  $b.append(`
-  `);  
+  var res = await fetch(gitCdn(Object.assign(gitParams, { path: 'web/index.htm' })));
+  $b.append(await res.text());  
 });
 
 /*
