@@ -1,0 +1,171 @@
+body {
+    color: #1d1e20;
+    background: #f5f5f7;
+}
+
+.title {
+    color: #FEFDFE;
+}
+
+.subtitle {
+    color: #FEFDFE;
+    font-weight: 200;
+}
+
+
+.footer {
+    background-color: transparent;
+    text-align: right;
+    font-size: 12px;
+    padding: 1rem;
+}
+
+
+.playing-now {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.playing-next {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.badges-container > span.badge > a {
+    text-decoration: none;
+    color: #f5f5f7;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.badges-container {
+    text-align: center;
+}
+
+
+.rotate {
+    animation: colorRotate 20s linear infinite;
+}
+
+@keyframes colorRotate {
+    100% {
+        -webkit-filter: hue-rotate(360deg);
+    }
+}
+
+.header-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50;
+    margin: auto;
+}
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgb(247 245 245 / 0%)), url(http://lazapada.net/lacucha.jpeg);
+    height: 90%;
+    background-image: linear-gradient(to bottom, #000000, #000000e8, #000000cc, #00000052, #0000004f, #20202600, #f5f5ff1c, #f5f5ff2b, #f5f5ff40, #f5f5ff59, #f5f5ff73, #f5f5ffd4, #f5f5ffe0, #eeeae7), url(http://lazapada.net/lacucha.jpeg);
+    /*
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.playing-container {
+    position: absolute;
+    margin: auto;
+    top: 180;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+}
+
+.playing-container label {
+    font-weight: 300;
+}
+
+.section-radio {
+    border: 1px solid #f5f5f7;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 12px;
+    background: #f5f5f7d4;
+    min-height: 650px;
+}
+
+.section-jam {
+    border: 1px solid #f5f5f7;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 12px;
+    background: #f5f5f7d4;
+    min-height: 650px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+audio {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+    background: #f1f3f4;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 11px;
+}
+
+.listeners {
+    margin-top: -1.5rem;
+    text-align: right;
+    font-size: 0.9rem;
+    padding-right: 5px;
+    font-weight: 800;
+}
+
+@media (max-width: 700px) {
+    .section-jam {
+        padding: 1.5rem;
+        margin-top: 2rem;
+        min-height: 300px;
+    }
+
+    .section-radio {
+
+        padding: 1.5rem;
+        min-height: 0px;
+    }
+
+    .playing-container {
+        position: absolute;
+        margin: auto;
+        top: 110;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+    }
+
+    audio {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
