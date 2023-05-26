@@ -19,7 +19,6 @@ include(incs).then(async () => {
 });
 
 async function getStats() {
-  debugger;
   $.ajax({
     url: 'http://lazapada.net:8000/statistics?json=1',
     dataType: 'JSONP',
