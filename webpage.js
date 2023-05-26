@@ -2,7 +2,7 @@ include('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js
 include('bootstrapcss', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css');
 include('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
 debugger;
-var $b = $(body);
+var $b = $(document.body);
 $b.attr('cz-shortcut-listen', 'true');
 $b.css('background', '#EEEAE7');
 $b.append(`
