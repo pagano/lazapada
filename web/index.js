@@ -19,10 +19,6 @@ include(incs).then(async () => {
 });
 
 async function getStats() {
-  var res = await fetch('http://lazapada.net:8000/statistics?json=1');
-  var jsn = await res.json();
-  debugger;
-
   $.ajax({
     url: 'http://lazapada.net:8000/statistics?json=1',
     dataType: 'JSONP',
