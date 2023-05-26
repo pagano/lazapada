@@ -1,10 +1,8 @@
-debugger;
-
 var incs = [];
 incs.push({ id: 'bootstrap', src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js' });
 incs.push({ id: 'bootstrapcss', src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css' });
 incs.push({ id: 'jquery', src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' });
-incs.push({ id: 'indexcss', src: gitCdn({ owner: 'pagano', repo: 'lazapada', path: 'web/index.css', url: true, fresh: true }) });
+incs.push({ id: 'indexcss', src: gitCdn(Object.assign(gitParams, { path: 'web/index.css' })) });
 
 include(incs).then((res) => {
   var $b = $(document.body);
