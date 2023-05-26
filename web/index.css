@@ -61,7 +61,8 @@ body {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 1), rgb(247 245 245 / 0%)), url(https://cdn.jsdelivr.net/gh/pagano/lazapada/web/lacucha.jpeg);
   height: 90%;
-  background-image: linear-gradient(to bottom, #000000, #000000e8, #000000cc, #00000052, #0000004f, #20202600, #f5f5ff1c, #f5f5ff2b, #f5f5ff40, #f5f5ff59, #f5f5ff73, #f5f5ffd4, #f5f5ffe0, #eeeae7), url(https://cdn.jsdelivr.net/gh/pagano/lazapada/web/lacucha.jpeg);
+  background-image: linear-gradient(to bottom, #000000, #000000e8, #000000cc, #00000052, #0000004f, #20202600, #f5f5ff1c, #f5f5ff2b, #f5f5ff40, #f5f5ff59, #f5f5ff73, #f5f5ffd4, #f5f5ffe0, #eeeae7),
+    url(https://cdn.jsdelivr.net/gh/pagano/lazapada/web/lacucha.jpeg);
   /*
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
