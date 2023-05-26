@@ -14,12 +14,12 @@ include(incs).then(async () => {
   var res = await fetch(gitCdn(Object.assign(gitParams, { path: 'web/index.htm' })));
   $b.append(await res.text());
 
-  $d.ready(() => {debugger;})
-  getStats();
+  $d.ready(getStats);
   setInterval(getStats, 10000);
 });
 
 async function getStats() {
+  debugger;
   $.ajax({
     url: 'http://lazapada.net:8000/statistics?json=1',
     dataType: 'JSONP',
