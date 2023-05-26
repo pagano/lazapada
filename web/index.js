@@ -14,7 +14,8 @@ include(incs).then(async () => {
   var res = await fetch(gitCdn(Object.assign(gitParams, { path: 'web/index.htm' })));
   $b.append(await res.text());
 
-  $d.ready(getStats);
+  $d.ready(() => {debugger;})
+  getStats();
   setInterval(getStats, 10000);
 });
 
