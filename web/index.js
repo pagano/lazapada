@@ -24,8 +24,8 @@ async function getStats() {
     dataType: 'JSONP',
     type: 'GET',
     success: function (data) {
-        $('#listeners_1').html(data.streams[0].currentlisteners);
-        $('#playing_1').html(data.streams[0].songtitle);
+        $('#listeners').html(data.streams[0].currentlisteners);
+        $('#playing').html(data.streams[0].songtitle);
     }
   });
 }
