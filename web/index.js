@@ -6,6 +6,7 @@ incs.push({ id: 'indexcss', src: gitCdn(Object.assign(gitParams, { path: 'web/in
 
 var $d, $b;
 
+
 include(incs).then(async () => {
   var $d = $(document);
   var $b = $(document.body);
